@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home page</title>
+    <!-- google fonts  -->
+    <link rel="stylesheet" href="outerlink.css" />
+    <!-- fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+  .hide_scroolbar::-webkit-scrollbar{
+    display: none;
+  }
+  </style>
+  <body class="h-[100vh] font-roboCondensed">
+    <!-- container   -->
+    <div class="bg-card-light w-full h-full grid grid-cols-24 lg:grid-cols-26 grid-rows-14 lg:grid-rows-16">
+      <!-- upper nav  -->
+      <div class="bg-customindigo-light col-span-full grid grid-cols-24">
+        <!-- logo section  -->
+        <div class="bg-red-00 relative grid place-items-center">
+          <div
+            class="overflow-hidden flex w-[3rem] lg:w-7 h-[3rem] lg:h-7 rounded-xl"
+          >
+            <img src="/icons&imgs/t logo.png" alt="">
+          </div>
+        </div>
+        <div
+          class="bg-red-00 col-span-17 flex justify-between items-center px-5"
+        >
+        <div class="text-xl font-semibold capitalize">
+         ms-enterprices
+        </div>
+        <div id="timeSection" class=" text-ellipsis text-xl font-semibold">10:34 Am 32/34/3434</div>
+        <!-- search input section start -->
+          <!-- <div
+            class="bg-white flex justify-around items-center w-80 h-12 overflow-hidden rounded-xl"
+          >
+            <input
+              class="px-2 w-3/5 h-full focus:outline-none"
+              placeholder="Search Products ....."
+              type="text"
+            />
+            <i class="text-xl fa-solid fa-magnifying-glass"></i>
+          </div> -->
+          <!-- search input section ends  -->
+          <!-- user icon & bell -->
+          <div class="flex gap-3 lg:gap-1 justify-center">
+            <div class="w-10 lg:w-5">
+              <img class="" src="/icons&imgs/notification.png" alt="" />
+            </div>
+           <div class="w-10 lg:w-6 bg-white p-1 rounded-full">
+            <img src="/icons&imgs/profile-user.png" alt="">
+           </div>
+          </div>
+        </div>
+        <div class="bg-red-00 col-span-6 grid place-items-center capitalize">
+          <span class="text-2xl font-semibold">items details</span>
+        </div>
+      </div>
+      <!-- side nav section  -->
+      <div
+        id="navSlider"
+        class="relative w-full z-10 duration-[1s] border-gray-400 shadow-xl shadow-black border-r-2 bg-customindigo-dark col-span-1 row-span-15 flex flex-col justify-between" >
+        <ul class="capitalize overflow-hidden ">
+          <li class=" p-2 lg:p-3"><div class="grid gap-3 grid-cols-12">
+            <div id="navSliderArrow" class="col-span-4 w-10 lg:w-7 ease-in-out duration-1000"><img src="/icons&imgs/arrow.png" alt=""></div>
+            <span class="col-span-8 px-3 flex justify-start items-center text-xl">close</span>
+          </a></li>
+          <li class="hover:bg-customindigo-light p-2 lg:p-3"><a href="" class="grid gap-3 grid-cols-12">
+            <div class="col-span-4 w-10 lg:w-7"><img src="/icons&imgs/dashboard.png" alt=""></div>
+            <span class="col-span-8 px-3 flex justify-start items-center text-xl">dashboard</span>
+          </a></li>
+          <!-- activated icon  -->
+          <li class="bg-slate-300 border-[1px] border-r-[5px] border-r-blue-400 border-gray-400 rounded-l-xl p-2 lg:p-3"><a href="" class="whitespace-nowrap grid gap-3 grid-cols-12">
+            <div class="col-span-4 w-10 lg:w-7"><img src="/icons&imgs/shopping-bag.png" alt=""></div>
+            <span class="col-span-8 px-3 flex justify-start items-center text-xl">cart / pos</span>
+          </a></li>
+          <li class="hover:bg-customindigo-light p-2 lg:p-3"><a href="" class="whitespace-nowrap grid gap-3 grid-cols-12">
+            <div class="col-span-4 w-10 lg:w-7"><img src="/icons&imgs/ready-stock.png" alt=""></div>
+            <span class="col-span-8 px-3 flex justify-start items-center text-xl">stock-rep</span>
+          </a></li>
+          <li class="hover:bg-customindigo-light p-2 lg:p-3"><a href="" class="grid gap-3 grid-cols-12">
+            <div class="col-span-4 w-10 lg:w-7"><img src="/icons&imgs/history.png" alt=""></div>
+            <span class="col-span-8 px-3 flex justify-start items-center text-xl">history</span>
+          </a></li>
+          
+        </ul>
+        <ul class="capitalize overflow-hidden">
+          <li class="hover:bg-customindigo-light p-2 lg:p-3"><a href="" class="grid gap-3 grid-cols-12">
+            <div class="col-span-4 w-10 lg:w-7"><img src="/icons&imgs/server.png" alt=""></div>
+            <span class="col-span-8 px-3 flex justify-start items-center text-xl">settings</span>
+          </a></li>
+          <li class="hover:bg-customindigo-light p-2 lg:p-3"><a href="" class="grid gap-3 grid-cols-12">
+            <div class="col-span-4 w-10 lg:w-7 rotate-180"><img src="/icons&imgs/logout.png" alt=""></div>
+            <span class="col-span-8 px-3 flex justify-start items-center text-xl">logout</span>
+          </a></li>
+        </ul>
+      </div>
+      <!-- mid container section  -->
+      <div class="hide_scroolbar bg-red-00 col-span-19 row-span-15 relative overflow-y-scroll ">
+        <!-- carts slider  -->
+        <div class="bg-indigo-00  w-full h-auto absolute grid p-10 lg:p-0 gap-5 grid-cols-3 ">
+          <!-- carts  -->
+          <!-- card 1 start  -->
+<div class="lg:scale-75 grid h-[22rem] w-[18rem] shadow-xl shadow-slate-500 grid-rows-11 border-2 overflow-hidden rounded-xl bg-blue-00">
+  <div class="relative row-span-5 flex bg-green-00">
+    <img src="https://cdn.britannica.com/17/176517-050-6F2B774A/Pile-uncooked-rice-grains-Oryza-sativa.jpg" alt="rice img" />
+    <span class="absolute bottom-10 right-0 grid h-[2rem] w-auto place-items-center rounded-l-xl bg-blue-500 px-5 capitalize text-white">rice</span>
+    <span class="absolute bottom-1 right-0 grid h-[2rem] w-auto place-items-center rounded-l-xl bg-blue-500 px-5 capitalize text-white">rice - type : 3</span>
+  </div>
+  <div class="row-span-6 grid grid-cols-2 grid-rows-16 bg-customindigo-dark">
+    <div class="col-span-2 row-span-2 grid place-items-center bg-card-light">
+      <div class="flex items-center gap-1 capitalize text-black"><span>available </span><span class="font-bold">10</span><span> bags /</span><span class="font-bold">500</span><span> kg</span></div>
+    </div>
+    <div class="row-span-10 grid grid-rows-12 bg-green-00">
+      <div class="row-span-7 flex flex-col items-center justify-center border-r border-black bg-card-light capitalize">
+        <div class="text-2xl font-bold"><sup>$</sup><span>1000</span></div>
+        <span class="text-[13px]">(per kg)</span>
+      </div>
+      <div class="row-span-5 flex items-center justify-center gap-2 border-r border-black bg-card-light">
+        <div class="flex w-[6rem] items-center justify-around rounded-xl bg-white py-1">
+          <button class="px-2 text-lg">-</button>
+          <p class="border-x px-3 text-xl font-bold">0</p>
+          <button class="px-2 text-lg">+</button>
+        </div>
+        <span class="capitalize">kg</span>
+      </div>
+    </div>
+    <div class="row-span-10 grid grid-rows-12 bg-green-00">
+      <div class="row-span-7 flex flex-col items-center justify-center bg-card-light capitalize">
+        <div class="text-2xl font-bold"><sup>$</sup><span>200000</span></div>
+        <span class="text-[13px]">(per bag)</span>
+      </div>
+      <div class="row-span-5 flex items-center justify-center gap-2 bg-card-light">
+        <div class="flex w-[6rem] items-center justify-around rounded-xl bg-white py-1">
+          <button class="px-2 text-lg">-</button>
+          <p class="border-x px-3 text-xl font-bold">0</p>
+          <button class="px-2 text-lg">+</button>
+        </div>
+        <span class="capitalize">bag</span>
+      </div>
+    </div>
+    <div class="col-span-2 row-span-4 flex justify-center items-center bg-card-light">
+      <button class="h-3/4 rounded-xl bg-blue-500 px-6 font-semibold capitalize text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 flex gap-2 items-center ">
+        <span>add to card</span>
+        <i class="fa-solid fa-cart-plus fa-rotate-by" style="--fa-rotate-angle: 335deg;"></i>
+      </button>
+    </div>
+  </div>
+</div>
+<!-- card 1 end  --> 
+       </div>
+      </div>
+      <!-- last container section  -->
+      <div class="bg-customindigo-dark col-span-6 row-span-15 grid grid-rows-24 bg-red-00">
+         <!-- partion adding start -->
+        <!-- <div class="grid h-full w-[20rem] grid-rows-22 bg-red-00"> -->
+          <!-- <div class="row-span-2 flex items-center bg-white pl-4">
+            <span class="text-2xl font-bold capitalize">items details</span>
+          </div> -->
+          <div class="hide_scroolbar relative row-span-12 overflow-y-scroll ">
+            <!-- curt slider -->
+            <div class="bg-red-00 absolute flex h-auto w-full flex-col items-center justify-between gap-5 px-2 py-3 pb-5">
+              <!-- curt start -->
+              <!-- <div class="flex h-[100vh] items-center justify-center"> -->
+              <div class="bg-red-00 grid h-[9rem] grid-rows-10 overflow-hidden rounded-xl border-[1px] border-gray-400 shadow-xl shadow-slate-500">
+                <div class="bg-green-00 row-span-7 grid grid-cols-12">
+                  <div class="bg-red-00 col-span-4 flex items-center justify-center">
+                    <div class="bg-indigo-00 flex h-3/4 w-3/4 overflow-hidden rounded-xl">
+                      <img src="https://static.toiimg.com/photo/101136807.cms" alt="ice cream bowl" />
+                    </div>
+                  </div>
+                  <div class="bg-red-00 col-span-8 grid grid-rows-10 capitalize">
+                    <div class="bg-indigo-00 row-span-4 flex items-center justify-center">
+                      <span class="text-xl font-bold">ice cream bowl</span>
+                    </div>
+                    <div class="bg-indigo-00 row-span-2 flex justify-center gap-2 text-sm font-bold"><span>type</span><span>dessert-1</span></div>
+                    <div class="bg-indigo-00 row-span-4 grid grid-cols-2 gap-1">
+                      <div class="bg-yellow-00 col-span-1 flex items-center justify-evenly">
+                        <button class="rounded-lg border-[1px] border-black px-2 text-sm">-</button>
+                        <span class="text-lg">3</span><span>kg</span>
+                        <button class="rounded-lg border-[1px] border-black px-2 text-sm">+</button>
+                      </div>
+                      <div class="bg-yellow-00 col-span-1 flex items-center justify-evenly">
+                        <button class="rounded-lg border-[1px] border-black px-2 text-sm">-</button>
+                        <span class="text-lg">2</span><span>box</span>
+                        <button class="rounded-lg border-[1px] border-black px-2 text-sm">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row-span-3 grid grid-cols-10 bg-slate-200">
+                  <div class="bg-red-00 col-span-6 flex items-center gap-2 pl-4"><span class="capitalize">2 box</span><span class="capitalize">3 kg</span></div>
+                  <div class="col-span-4 flex items-center justify-center">
+                    <span class="text-2xl font-bold"><sup>$</sup>15.99</span>
+                  </div>
+                </div>
+              </div>
+              <!-- </div> -->
+              <!-- curt end -->
+              <!-- curt start -->
+              <!-- <div class="flex h-[100vh] items-center justify-center"> -->
+                <div class="bg-red-00 grid h-[9rem] grid-rows-10 overflow-hidden rounded-xl border-[1px] border-gray-400 shadow-xl shadow-slate-500">
+                  <div class="bg-green-00 row-span-7 grid grid-cols-12">
+                    <div class="bg-red-00 col-span-4 flex items-center justify-center">
+                      <div class="bg-indigo-00 flex h-3/4 w-3/4 overflow-hidden rounded-xl">
+                        <img src="https://static.toiimg.com/photo/101136807.cms" alt="ice cream bowl" />
+                      </div>
+                    </div>
+                    <div class="bg-red-00 col-span-8 grid grid-rows-10 capitalize">
+                      <div class="bg-indigo-00 row-span-4 flex items-center justify-center">
+                        <span class="text-xl font-bold">ice cream bowl</span>
+                      </div>
+                      <div class="bg-indigo-00 row-span-2 flex justify-center gap-2 text-sm font-bold"><span>type</span><span>dessert-1</span></div>
+                      <div class="bg-indigo-00 row-span-4 grid grid-cols-2 gap-1">
+                        <div class="bg-yellow-00 col-span-1 flex items-center justify-evenly">
+                          <button class="rounded-lg border-[1px] border-black px-2 text-sm">-</button>
+                          <span class="text-lg">3</span><span>kg</span>
+                          <button class="rounded-lg border-[1px] border-black px-2 text-sm">+</button>
+                        </div>
+                        <div class="bg-yellow-00 col-span-1 flex items-center justify-evenly">
+                          <button class="rounded-lg border-[1px] border-black px-2 text-sm">-</button>
+                          <span class="text-lg">2</span><span>box</span>
+                          <button class="rounded-lg border-[1px] border-black px-2 text-sm">+</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row-span-3 grid grid-cols-10 bg-slate-200">
+                    <div class="bg-red-00 col-span-6 flex items-center gap-2 pl-4"><span class="capitalize">2 box</span><span class="capitalize">3 kg</span></div>
+                    <div class="col-span-4 flex items-center justify-center">
+                      <span class="text-2xl font-bold"><sup>$</sup>15.99</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- </div> -->
+                <!-- curt end -->
+                <!-- curt start -->
+              <!-- <div class="flex h-[100vh] items-center justify-center"> -->
+              <div class="bg-red-00 grid h-[9rem] grid-rows-10 overflow-hidden rounded-xl border-[1px] border-gray-400 shadow-xl shadow-slate-500">
+                <div class="bg-green-00 row-span-7 grid grid-cols-12">
+                  <div class="bg-red-00 col-span-4 flex items-center justify-center">
+                    <div class="bg-indigo-00 flex h-3/4 w-3/4 overflow-hidden rounded-xl">
+                      <img src="https://static.toiimg.com/photo/101136807.cms" alt="ice cream bowl" />
+                    </div>
+                  </div>
+                  <div class="bg-red-00 col-span-8 grid grid-rows-10 capitalize">
+                    <div class="bg-indigo-00 row-span-4 flex items-center justify-center">
+                      <span class="text-xl font-bold">ice cream bowl</span>
+                    </div>
+                    <div class="bg-indigo-00 row-span-2 flex justify-center gap-2 text-sm font-bold"><span>type</span><span>dessert-1</span></div>
+                    <div class="bg-indigo-00 row-span-4 grid grid-cols-2 gap-1">
+                      <div class="bg-yellow-00 col-span-1 flex items-center justify-evenly">
+                        <button class="rounded-lg border-[1px] border-black px-2 text-sm">-</button>
+                        <span class="text-lg">3</span><span>kg</span>
+                        <button class="rounded-lg border-[1px] border-black px-2 text-sm">+</button>
+                      </div>
+                      <div class="bg-yellow-00 col-span-1 flex items-center justify-evenly">
+                        <button class="rounded-lg border-[1px] border-black px-2 text-sm">-</button>
+                        <span class="text-lg">2</span><span>box</span>
+                        <button class="rounded-lg border-[1px] border-black px-2 text-sm">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row-span-3 grid grid-cols-10 bg-slate-200">
+                  <div class="bg-red-00 col-span-6 flex items-center gap-2 pl-4"><span class="capitalize">2 box</span><span class="capitalize">3 kg</span></div>
+                  <div class="col-span-4 flex items-center justify-center">
+                    <span class="text-2xl font-bold"><sup>$</sup>15.99</span>
+                  </div>
+                </div>
+              </div>
+              <!-- </div> -->
+              <!-- curt end -->
+            </div>
+          </div>
+          <div class="row-span-6 bg-red-00 flex h-full flex-col justify-center p-4 text-sm capitalize">
+            <div class="mb-1 flex flex-col gap-1">
+              <div class="bg-red-00 flex w-full justify-between"><span>items</span><span>4(itmes)</span></div>
+              <div class="bg-red-00 flex w-full justify-between"><span>subtotal</span><span>$34.00</span></div>
+              <div class="bg-red-00 flex w-full justify-between"><span>discount</span><span>-$4.00</span></div>
+              <div class="bg-red-00 flex w-full justify-between"><span>vat(10%)</span><span>$1.22</span></div>
+            </div>
+            <div class="bg-red-00 flex w-full items-center justify-between border-t-[1px] border-gray-400 p-1 text-xl font-medium"><span>total</span><span>$31.88</span></div>
+            <div></div>
+          </div>
+          <div class="row-span-3 bg-blue-00 grid grid-rows-12 capitalize">
+            <span class="bg-red-00 row-span-4 pl-4 flex items-center font-semibold">payment method</span>
+            <div class="bg-red-00 row-span-8 flex justify-around items-center text-3xl">
+              <span class="bg-white border-2 p-2 rounded-xl w-14 grid place-items-center h-12"><i class="fa-solid fa-money-bills"></i></span>
+              <span class="bg-white shadow-lg shadow-slate-600 p-2 rounded-xl w-14 grid place-items-center h-12"><i class="fa-regular fa-credit-card"></i></span>
+               <span class="bg-white border-2 p-2 rounded-xl w-14 grid place-items-center h-12"><i class="fa-brands fa-leanpub"></i></span>
+               <span class="bg-white border-2 p-2 rounded-xl w-14 grid place-items-center h-12"><i class="fa-solid fa-qrcode"></i></span>
+            </div>
+          </div>
+          <div class="row-span-3 bg-blue-00 grid py-3 px-10">
+            <button class="capitalize bg-blue-500 hover:bg-blue-600 duration-150 linear rounded-lg text-white font-bold">process transaction</button>
+          </div>
+        </div>
+        <!-- partion adding end -->
+      </div>
+    </div>
+  </body>
+  <script>
+    // slider nav toggler section start 
+    let navSlider = document.getElementById("navSlider");
+    let navSliderArrow = document.getElementById("navSliderArrow");
+    isToggledNavSlider = false;
+    const navSliderHandler = () => {
+      if (isToggledNavSlider) {
+        navSlider.classList.remove("w-40");
+        navSliderArrow.classList.remove("translate-x-28");
+        navSliderArrow.classList.remove("rotate-180");
+        navSlider.classList.add("w-full");
+        isToggledNavSlider = false;
+      } else {
+        navSlider.classList.remove("w-full");
+        navSlider.classList.add("w-40");
+        navSliderArrow.classList.add("translate-x-28");
+        navSliderArrow.classList.add("rotate-180");
+        isToggledNavSlider = true;
+      }
+    };
+    navSliderArrow.addEventListener("click", navSliderHandler);
+    // slider nav toggler section start 
+
+    // time section start 
+    
+    const timingFunc = ()=>{
+    let timeSection = document.getElementById("timeSection");
+    let time = new Date().toLocaleString();
+
+    timeSection.innerText = time;
+    };
+    setInterval(timingFun, 1000);
+    // timingFun();
+    // time section end 
+  </script>
+</html>
